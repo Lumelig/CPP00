@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.cpp                                        :+:      :+:    :+:   */
+/*   contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 04:17:40 by jpflegha          #+#    #+#             */
-/*   Updated: 2025/11/27 04:17:42 by jpflegha         ###   ########.fr       */
+/*   Updated: 2025/11/27 19:50:59 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Contact.hpp"
+#include "contact.hpp"
 
 void    contact::setFirstName(const std::string &str)
 {
@@ -39,6 +39,10 @@ std::string contact::getFirstName() const
 std::string contact::getLastName() const
 {
     return (LastName);
+}
+std::string contact::getPhoneNumber() const
+{
+    return(PhoneNumber);
 }
 std::string contact::getNickname() const
 {

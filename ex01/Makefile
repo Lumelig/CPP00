@@ -6,15 +6,15 @@
 #    By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/27 04:17:06 by jpflegha          #+#    #+#              #
-#    Updated: 2025/11/27 04:47:55 by jpflegha         ###   ########.fr        #
+#    Updated: 2025/11/27 19:46:43 by jpflegha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = MyAwesomePhoneBook
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=++17
-SRC =	PhoneBook.ccp \
-		Contact.cpp \
+CFLAGS = -Wall -Werror -Wextra -std=c++17
+SRC =	phoneBook.cpp \
+		contact.cpp \
 		main.cpp 
 
 OBJ = $(SRC:.cpp=.o)

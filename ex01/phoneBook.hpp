@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBookk.hpp                                     :+:      :+:    :+:   */
+/*   phoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 04:17:57 by jpflegha          #+#    #+#             */
-/*   Updated: 2025/11/27 04:18:16 by jpflegha         ###   ########.fr       */
+/*   Updated: 2025/11/27 19:47:17 by jpflegha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
-#include "Contact.hpp"
+#include "contact.hpp"
 #include <iostream>
 #include <iomanip>
 
@@ -27,8 +27,8 @@ public:
     PhoneBook();
 
     void addContact();
-    void searchContacts();
-    void displayContacts();
+    void searchContacts() const;
+    void displayContacts(int index) const;
 };
 
 #endif
