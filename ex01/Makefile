@@ -1,1 +1,38 @@
-NAME = MyAwesome
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/11/27 04:17:06 by jpflegha          #+#    #+#              #
+#    Updated: 2025/11/27 04:47:55 by jpflegha         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = MyAwesomePhoneBook
+CC = c++
+CFLAGS = -Wall -Werror -Wextra -std=++17
+SRC =	PhoneBook.ccp \
+		Contact.cpp \
+		main.cpp 
+
+OBJ = $(SRC:.cpp=.o)
+
+.PHONY: all clean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ) 
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+
+	rm -f $(NAME)
+re: fclean all
