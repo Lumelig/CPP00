@@ -1,6 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/11/27 04:17:19 by jpflegha          #+#    #+#              #
+#    Updated: 2025/11/27 04:17:21 by jpflegha         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = 	megaphone
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++17
 SRC = megaphone.cpp
 OBJ = $(SRC:.cpp=.o)
 

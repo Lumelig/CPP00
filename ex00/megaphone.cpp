@@ -1,15 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jpflegha <jpflegha@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/27 04:17:12 by jpflegha          #+#    #+#             */
+/*   Updated: 2025/11/27 18:38:07 by jpflegha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 # include <iostream>
 # include <cctype>
-
-using std::cout;
-using std::endl;
-using std::toupper;
 
 int main(int ac, char ** av)
 {
     if (ac < 2)
     {
-        cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
         return (0);
     }
     for (int i = 1; i < ac; i++)
@@ -18,11 +26,11 @@ int main(int ac, char ** av)
         {
             char c = av[i][j];
             c = static_cast<char>(toupper(static_cast<unsigned char>(c)));
-            cout << c;
+            std::cout << c;
         }
         if (i + 1 < ac)
-            cout << " ";
+            std::cout << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
     return (0);
 }
